@@ -8,10 +8,7 @@ package FrequencyAnalyzer;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author saulecabrera
- */
+
 public class LetterFrequencyMap {
         private final String[] alphabet = {"a", "b", "c","d","e", "f", "g","h","i", "j", "k","l", "m", "n", "o","p"
                 + "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
@@ -26,24 +23,22 @@ public class LetterFrequencyMap {
     
         private class LetterFrequency {
 
-        private double frequency;
-        private String letter;
-        private boolean usedToSubstitute;
+            private double frequency;
+            private String letter;
+            private boolean usedToSubstitute;
 
-        public LetterFrequency(double f, String l, boolean u){
-            this.frequency = f;
-            this.letter = l;
-            this.usedToSubstitute = u;
-        }
+            public LetterFrequency(double f, String l, boolean u){
+                this.frequency = f;
+                this.letter = l;
+                this.usedToSubstitute = u;
+            }
 
-        public double getFrequency(){
-            return this.frequency;
-        }
+            public double getFrequency(){
+                return this.frequency;
+            }
 
-        public String getLetter(){
-            return this.letter;
-        }
-
-    }    
-
+            public String getLetter(){
+                return this.letter;
+            }
+        }    
 }

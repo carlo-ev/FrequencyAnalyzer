@@ -6,10 +6,6 @@
 
 package FrequencyAnalyzer;
 
-/**
- *
- * @author saulecabrera
- */
 public class Frequency_analyzer {
 
     /**
