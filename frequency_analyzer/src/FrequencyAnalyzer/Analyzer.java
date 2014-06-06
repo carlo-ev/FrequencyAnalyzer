@@ -7,10 +7,6 @@
 package FrequencyAnalyzer;
 
 
-/**
- *
- * @author saulecabrera
- */
 public class Analyzer {
     
   private String message;
