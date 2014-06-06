@@ -26,24 +26,27 @@ public class LetterFrequencyMap {
     
         private class LetterFrequency {
 
-        private double frequency;
-        private String letter;
-        private boolean usedToSubstitute;
+            private double frequency;
+            private String letter;
+            private boolean usedToSubstitute;
 
-        public LetterFrequency(double f, String l, boolean u){
-            this.frequency = f;
-            this.letter = l;
-            this.usedToSubstitute = u;
+            public LetterFrequency(double f, String l, boolean u){
+                this.frequency = f;
+                this.letter = l;
+                this.usedToSubstitute = u;
+            }
+
+            public double getFrequency(){
+                return this.frequency;
+            }
+
+            public String getLetter(){
+                return this.letter;
+            }
+
+        } 
+        
+        public ArrayList<LetterFrequency> getEnglishLetterFrequencies(){
+            return this.englishLetterFrequencies;
         }
-
-        public double getFrequency(){
-            return this.frequency;
-        }
-
-        public String getLetter(){
-            return this.letter;
-        }
-
-    }    
-
 }
