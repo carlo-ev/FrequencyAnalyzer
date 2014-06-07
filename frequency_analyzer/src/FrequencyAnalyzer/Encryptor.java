@@ -24,6 +24,7 @@ public class Encryptor {
     }
     
     public String encrypt(String message){
+        message = message.toLowerCase();
         String encryptedMessage = "";
         for (int i = 0; i < message.length(); i++){
             encryptedMessage += this.substitutionCipher.get(Character.toString(message.charAt(i)));
