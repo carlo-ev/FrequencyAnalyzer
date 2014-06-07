@@ -40,7 +40,6 @@ public class Analyzer {
   }
   
   
-  //Metodo crasheando
   private LetterAndFrequency getLetterWithFrequency(){
       int count = 0;
       if(!message.isEmpty()){
