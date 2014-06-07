@@ -19,6 +19,9 @@ public class FrequencyAnalyzer {
         for (Map.Entry<String, String> entry: test.entrySet()){
             System.out.println(entry.getKey() + " => " + entry.getValue());
         }
+        
+        Encryptor enx = new Encryptor();
+        System.out.println(enx.encrypt("Saul"));
     }
     
 }
