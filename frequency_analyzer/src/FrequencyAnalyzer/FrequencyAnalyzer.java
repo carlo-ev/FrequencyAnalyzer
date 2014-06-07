@@ -6,13 +6,19 @@
 
 package FrequencyAnalyzer;
 
-public class Frequency_analyzer {
+import java.util.HashMap;
+import java.util.Map;
+
+public class FrequencyAnalyzer {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        HashMap<String, String> test = new Analyzer("Hola").frequencyMapAsString();
+        for (Map.Entry<String, String> entry: test.entrySet()){
+            System.out.println(entry.getKey() + " => " + entry.getValue());
+        }
     }
     
 }
