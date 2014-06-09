@@ -53,24 +53,4 @@ public class Analyzer {
       }
       return null;
   }
-  
-  
-  //Internal class ====== this works well
-  private class LetterAndFrequency{
-      private double frequency;
-      private String letter;
-      public LetterAndFrequency(String letter, double f){
-          this.letter = letter;
-          this.frequency = f;
-      }
-      
-      public double getFrequency(){
-          return this.frequency;
-      }
-      
-      public String getLetter(){
-          return this.letter;
-      }
-  }
-  
 }

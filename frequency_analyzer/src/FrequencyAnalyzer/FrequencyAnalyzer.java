@@ -15,13 +15,8 @@ public class FrequencyAnalyzer {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        HashMap<String, String> test = new Analyzer("Hola").frequencyMapAsString();
-        for (Map.Entry<String, String> entry: test.entrySet()){
-            System.out.println(entry.getKey() + " => " + entry.getValue());
-        }
-        
-        Encryptor enx = new Encryptor();
-        System.out.println(enx.encrypt("Saul"));
+        System.out.println("Running Gui from Main!");
+        AnalyzerGui.main(args);
     }
     
 }
