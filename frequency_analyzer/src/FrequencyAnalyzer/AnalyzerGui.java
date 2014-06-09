@@ -117,13 +117,13 @@ public class AnalyzerGui extends javax.swing.JFrame {
         String mensaje = this.jTextArea1.getText();
         this.jTextArea1.setEnabled(false);
         mensaje = mensaje.replace(" ", "");
-        int totalLetters = mensaje.length();
         final ArrayList<Character> letters = new ArrayList<Character>();
         for(int i=0; i<mensaje.length(); i++){
             if(!letters.contains(mensaje.charAt(i))){
                 letters.add(mensaje.charAt(i));
             } 
         }
+        int totalLetters = letters.size();
         final ArrayList<String> counts = new ArrayList<String>();
         int counter;
         for (int i = 0; i<letters.size();  i++) {
@@ -132,7 +132,7 @@ public class AnalyzerGui extends javax.swing.JFrame {
                 if(mensaje.charAt(j) == letters.get(i))
                        counter++;
             }
-            counts.add(letters.get(i) + " : " + Integer.toString(counter) + " -> " + Integer.toString((int)(counter/totalLetters)*100) + "%" ); 
+            counts.add(letters.get(i) + " : " + Integer.toString(counter) + " -> " + Double.toString((((double)counter/(double)totalLetters)*100)) + "%" ); 
         }
         this.jList1.setModel(new javax.swing.AbstractListModel() {
             Object[] chars = counts.toArray();
